@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test('event creation', async ({ request }) => {
+test('event creations today', async ({ request }) => {
   const testTitle = 'Test event';
   const response = await request.post('/', {
     data: {
