@@ -8,6 +8,7 @@ test('event creation', async ({ request }) => {
       title: testTitle,
     },
   });
+  
   expect(response.ok()).toBeTruthy();
   const resDataRaw = await response.body();
   const resData = JSON.parse(resDataRaw.toString());
